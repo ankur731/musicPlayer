@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/c06e946a68.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fa-solid fa-angle-down"></i>
+            <span>Now Playing</span>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="img-area">
+            <img src="images/music-12.jpg" alt="music-1">
+        </div>
+        <div class="song-details">
+            <p class="name">Despacito</p>
+            <p class="artist">Luis Fonsi</p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+            
+            </div>
+        <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration">4:41</span>
+            </div>
+            <audio src="music/music-12.mp3"  id="main-audio"></audio>
+        </div>
+        <div class="controls">
+            <i class="fa-solid fa-repeat repeat"></i>
+            <i class="fa-solid fa-backward-step" id="prev"></i>
+            <div class="play-pause">
+                <i class="fa-solid fa-play " id="play-pause"></i>
+        </div>
+        <i class="fa-solid fa-forward-step" id="next"></i>
+        <i class="fa-solid fa-list-ul"></i>
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>Music list</span>
+                </div>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </div>
+       
+       <ul style="padding-left: 0px;">
+        <li>
+            <div class="row" id="0" onclick="reply(this.id)">
+                <span>Ami Je Tomar</span>
+                <p>Arijit Singh</p>
+            </div>
+            <span class="audio-duration">2:53</span>
+        </li>
+        <li>
+            <div class="row" id="1" onclick="reply(this.id)">
+                <span>Rataan Lambiya</span>
+                <p>Jubin Nautiyaal</p>
+            </div>
+            <span class="audio-duration">3:50</span>
+        </li>
+        <li>
+            <div class="row" id="2" onclick="reply(this.id)">
+                <span>Kesariya</span>
+                <p>Arijit Singh</p>
+            </div>
+            <span class="audio-duration">4:28</span>
+        </li>
+        <li>
+            <div class="row" id="3" onclick="reply(this.id)">
+                <span>Excuses</span>
+                <p>A.P Dhillon</p>
+            </div>
+            <span class="audio-duration">2:56</span>
+        </li>
+        <li>
+            <div class="row" id="4" onclick="reply(this.id)">
+                <span>Insane</span>
+                <p>A.P Dhillon</p>
+            </div>
+            <span class="audio-duration">3:26</span>
+        </li>
+        <li>
+            <div class="row" id="5" onclick="reply(this.id)">
+                <span>Aafat</span>
+                <p>Liger</p>
+            </div>
+            <span class="audio-duration">2:43</span>
+        </li>
+        <li>
+            <div class="row" id="6" onclick="reply(this.id)">
+                <span>Let Me Down Slowly</span>
+                <p>Alec Banjamin</p>
+            </div>
+            <span class="audio-duration">2:57</span>
+        </li>
+        <li>
+            <div class="row" id="7" onclick="reply(this.id)">
+                <span>Pasoori</span>
+                <p>Alec Gill</p>
+            </div>
+            <span class="audio-duration">4:28</span>
+        </li>
+        <li>
+            <div class="row" id="8" onclick="reply(this.id)">
+                <span>Arcade</span>
+                <p>Duncan Laurence</p>
+            </div>
+            <span class="audio-duration">4:05</span>
+        </li>
+        <li>
+            <div class="row" id="9" onclick="reply(this.id)">
+                <span>Lovely</span>
+                <p>Billie Eilish</p>
+            </div>
+            <span class="audio-duration">3:20</span>
+        </li>
+        <li>
+            <div class="row" id="10" onclick="reply(this.id)">
+                <span>Ride With Me</span>
+                <p>Kid Ink</p>
+            </div>
+            <span class="audio-duration">3:20</span>
+        </li>
+       
+        <li>
+            <div class="row" id="11" onclick="reply(this.id)">
+                <span>Stay</span>
+                <p>Justin Bieber</p>
+            </div>
+            <span class="audio-duration">2:21</span>
+        </li>
+        <li>
+            <div class="row" id="12" onclick="reply(this.id)">
+                <span>Despacito</span>
+                <p>Luis Fonsi</p>
+            </div>
+            <span class="audio-duration">4:41</span>
+        </li>
+        
+       </ul>
+    </div> 
+</div>
+
+    <script src="music.js"></script>
+</body>
+</html>
