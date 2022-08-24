@@ -1,29 +1,92 @@
 
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: rgb(214, 20, 214);
-    
-}
+    min-height: 95vh;
+    background-color: #403060;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+
 .wrapper{
     width: 380px;
-    height: 530px;
+    height: 540px;
     padding: 25px;
+    padding-top: 18px;
     position: relative;
     background-color: #fff;
     box-shadow: 0px 6px 15px #515c6f;
     border-radius: 15px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 200px; */
+    
+}
+.wrapper p{
+    text-align: center;
+    color: #515c6f;
 }
 .wrapper i{
     cursor: pointer;
 }
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 8.5rem;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #8069af;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: #4e4649;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #add8e6;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #808080;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #808080;
+    outline-offset: 0.125rem;
+  }
 
 .top-bar, .progress-area .timer, .controls, .music-list .header, .music-list li{
     display: flex;
@@ -31,14 +94,17 @@ body{
     justify-content: space-between;
 }
 
+
+
 .top-bar {
    display: flex;
    align-items: center;
    justify-content: space-between;
+
 }
 .top-bar i{
     font-size: 30px;
-    color: #515c6f;
+    color: #403060;
 }
 .top-bar span{
     font-size: 18px;
@@ -49,7 +115,7 @@ body{
     width: 100%;
     margin-top: 25px;
     border-radius: 25px;
-    background-color: aqua;
+    background-color: #fff;
     box-shadow: 0px 6px 15px #515c6f;
 }
 .img-area img{
@@ -81,24 +147,10 @@ body{
     width: 0%;
     position: relative;
     border-radius: inherit;
-    background: linear-gradient(90deg, #ff74a4 0%, #82a0c2 100%);
+    background: linear-gradient(90deg, #ff74a4 0%, #7d5fbb 100%);
+    background-color: #403060;
 }
-/* .progress-bar::before{
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    background-color: #000;
-    border-radius: inherit;
-    top: 50%;
-    right: -5px;
-    transform: translateY(-50%);
-    background: inherit;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-.progress-area:hover .progress-bar::before{
-    opacity: 1;
-} */
+
 .progress-area .timer{
     margin-top: 2px;
 }
@@ -113,7 +165,7 @@ body{
 .controls i{
     font-size: 24px;
     user-select: none;
-    background: linear-gradient(90deg, #ff74a4 0%, #82a0c2 100%);
+    background: linear-gradient(90deg, #ff74a4 0%, #7d5fbb 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -122,10 +174,8 @@ body{
     font-size: 27px;
 }
 .controls .play-pause{
-    height: 54px;
-    width: 54px;
-    background: linear-gradient(rgb(245, 244, 244) 0%, rgb(202, 197, 197) 100%);
-    border-radius: 50%;
+    height: 60px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,8 +186,8 @@ body{
     left: 105%;
     bottom: 430px;
     top: 0.8%;
-    opacity: 0;
-  
+/* opacity: 0; */
+   /* display: none; */
     width: 300px;
     height: 545px;
     padding: 15px 30px;
@@ -146,11 +196,7 @@ body{
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.25s ease-out;
 }
-/* .music-list .show{
-    bottom: 0;
-    opacity: 1;
-    pointer-events: auto;
-} */
+
 .music-list .header .row{
     display: flex;
     align-items: center;
@@ -163,6 +209,7 @@ body{
 }
 .header .row i{
     cursor: default;
+    color: #403060;
 }
 .header .row span{
     margin-left: 5px;
@@ -171,7 +218,7 @@ body{
 
 .header #close{
     font-size: 22px;
-    color: #515c6f;
+    color: #403060;
 }
 .music-list ul{
     margin: 10px 0;
@@ -185,8 +232,7 @@ body{
 .music-list ul::-webkit-scrollbar-thumb{
     width: 10px;
     border-radius: 10px;
-    background: linear-gradient(rgb(204, 107, 163) 0%, rgb(230, 97, 203) 100%);
-
+    background: linear-gradient(90deg, #ff74a4 0%, #7d5fbb 100%);
 }
 .music-list ul::-webkit-scrollbar-track{
     width: 10px;
@@ -217,3 +263,60 @@ ul li .row p{
 ul li .audio-duration{
     font-size: 16px;
 }
+
+.menu{
+    /* position: absolute; */
+    position: relative;
+    bottom: 187px;
+    right: 160px;
+    opacity: 0;
+    height: 195px;
+    width: 130px;
+    border-radius: 10%;
+    
+    padding: 5px 15px;
+   
+    background: rgb(255, 255, 255);
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.35s ease-out;
+}
+.menu ul li a{
+    padding: 3px 7px;
+    font-size: 19px;
+    text-decoration: none;
+    color:#403060
+   
+
+}
+.menu ul li i{
+    color: #515c6f;
+}
+.menu ul li a:visited{
+    color:#403060
+}
+
+
+.menu ul{
+    padding: 1px;
+}
+.row2{
+    margin-left: 13px;
+    font-size: 15px;
+    color:#403060
+}
+#close-2{
+    position: relative;
+    font-size: 29px;
+    /* display: none; */
+    color: #838891;
+    left: 75%;
+    bottom: 5%;
+    cursor: pointer;
+}
+.menu ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: #515c6f;
+}
+
