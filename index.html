@@ -11,15 +11,23 @@
     
 </head>
 
-<body onload="musicList()">
+<body onload="musicList()" >
     <script src="canvas.js"></script>
     <div class="wrapper">
         <div class="top-bar">
             <i class="fa-solid fa-volume-high volume " style="font-size: 24px;"></i>
             <input type="range" id="volume-control">
             <span>Now Playing</span>
+            <div class="dropdown">
+                <i onclick="myFunction()" class="dropbtn fa-solid fa-bars fa-sm" id="bars"></i>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://pagalworld.com.se/files/download/id/5637" target="_blank" id="download">Download &nbsp<i class="fa-solid fa-download "></i> </a>
+                  <a href="https://www.linkedin.com/in/ankur-tiwari-7003041b7/"  target="_blank">LinkedIn <i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://github.com/ankur731"  target="_blank">Github <i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.instagram.com/ankur_tiwari73/"  target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
            
-            <i class="fa-solid fa-bars" id="bars"></i>
         </div>
         <div class="img-area">
             <img src="images/music-12.jpg" alt="music-1">
@@ -154,53 +162,7 @@
        </ul></div>
        <p>&#169 Ankur Tiwari</p>
     </div> 
-    <div class="menu">
-        <ul>
-          
-            <i class="fa-solid fa-xmark fa-xl" id="close-2" ></i>
-      
-            <li>
-                <div class="row">
-                  <a href="">Share
-                   <i class="fa-solid fa-share-nodes "></i>
-                </a>
-                 </div>
-             </li>
-            <li>
-                <div class="row">
-                   <a href="https://pagalworld.com.se/files/download/id/5637" id="download">Download
-                   <i class="fa-solid fa-download"></i>
-                </a>
-                 </div>
-             </li>
-            <li>
-                <div class="row">
-                   <a href="https://www.linkedin.com/in/ankur-tiwari-7003041b7/" >Contact Me
-                </a>
-                 </div>
-                 <div class="contact">
-                 <li>
-                    <div class="row2">
-                        <a href="https://www.linkedin.com/in/ankur-tiwari-7003041b7/">LinkedIn
-                         <i class="fa-brands fa-linkedin"></i>
-                     </a>
-                      </div>
-                 </li>
-                 <li>
-                    <div class="row2">
-                        <a href="https://www.instagram.com/ankur_tiwari73/" >Instagram
-                            <i class="fa-brands fa-square-instagram"></i>
-                     </a>
-                      </div>
-                 </li>
-                </div>
-             </li>
-          
-        </ul>
-        
-    </div>
-
-
+   
     <script src="music.js"></script>
   
 </body>
